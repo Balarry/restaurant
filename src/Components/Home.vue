@@ -18,8 +18,8 @@
 </v-container>
 <!-- About -->
 <v-container>
-   <v-row>
-      <v-card align="centre">
+   <v-row>  
+      <v-card align="center">
       <p class="text-h4"><b>Welcome to UberEats</b></p>
       <p class="text-h6">We are a food delivery platform that bridges customers with their favorite local restaurants.</p>
       <p class="text-h6">Our service is built on speed, reliability, and convenience, ensuring meals arrive fresh and on time.</p>

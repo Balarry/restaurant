@@ -6,6 +6,7 @@ const menu = {
       image: "/images/menu/amirali-mirhashemian-sc5sTPMrVfk-unsplash.jpg",
       price: 500,
       description: 'The most juicy burger you will ever find',
+      long description:'',
       category: 'food'
    },
    1:{

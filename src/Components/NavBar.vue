@@ -1,5 +1,5 @@
 <script setup>
-const isLoggedIn = true
+const isLoggedIn = JSON.parse(localStorage.getItem( "signUpData"));
 </script>
 
 <template>

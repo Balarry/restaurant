@@ -10,8 +10,7 @@ const isLoggedIn = JSON.parse(localStorage.getItem( "signUpData"));
       <v-btn to="/contactus">Contact Us</v-btn>
       <v-btn to="/orders" v-if="isLoggedIn">My Orders</v-btn>
       <v-btn to="/reservation">Reservation</v-btn>
-      <v-avatar to="/userprofile" v-if="isLoggedIn">
-         <span class="text-h5">O</span>
+      <v-avatar to="/userprofile" v-if="isLoggedIn"><span class="text-h5">O</span>
          </v-avatar>
       <v-btn to="/login" v-else>Login</v-btn>
 

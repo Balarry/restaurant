@@ -9,6 +9,7 @@ import Orders from '@/Components/Orders.vue'
 import SignUp from '@/Components/SignUp.vue'
 import Login from '@/Components/Login.vue'
 import UserProfile from '@/Components/UserProfile.vue'
+import Admin from '@/Components/Admin.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -58,7 +59,11 @@ const router = createRouter({
       path: '/userprofile',
       component: UserProfile
     },
-    
+    {
+      name: 'admin',
+      path: '/admin',
+      component: Admin
+    }
   ],
 })
 

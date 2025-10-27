@@ -60,7 +60,7 @@ export const useMenuStore = defineStore('menu',  {
       longDescription: 'A double pizza means double the layers, double the cheese, and double the flavor in every bite. Stacked with rich sauce, gooey toppings, and a golden crust, it’s built to satisfy the biggest cravings. Perfect for true pizza lovers, it delivers twice the indulgence in one meal.',
       category: 'food'
    },
-   8:{
+   8:{ 
       name: 'Kukufest',
       image: "/images/menu/lucas-andrade-3Uj0GwVmOeY-unsplash.jpg",
       price: 650,

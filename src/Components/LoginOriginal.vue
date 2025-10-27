@@ -1,31 +1,33 @@
 <script setup>
-
 import {ref} from 'vue'
-import api from '../services/api'
-import TokenService from '../services/TokenService'
-import router from '../router/index'
+import { useRouter } from 'vue-router'
 
+const router = useRouter();
+const showPassword = ref(false)
 
-const email = ref('')
-const password = ref('')
+//models
+const email = ref(null)
+const password = ref(null) 
 
-async function login (){
-   try{
-      const response = await api.post('/login',
-         {
-            'email': email.value,
-            'password': password.value
-         });
-         TokenService.setToken(response.data)
-          
-         alert('login successful');
-         router.push('/welcome')
+function login(){
+    try {
+        //get user data
+        let user = JSON.parse(localStorage.getItem( "signUpData"));
+        //check user details
+        if(email.value = user.email && password.value == user.password){
+            localStorage.setItem( "isLoggedIn", true );
+            router.push('/')
 
-        }catch (error){
-      console.error('login failed'. error.response?.data)
-     }
-   }
+        }else{
+            console.log("Invalid credentials")
+        }
 
+        // To Do: send data to backend
+    } catch (err) {
+        console.error('Sign up process failed', err)
+    }   
+
+}
 
 </script>
 

@@ -18,7 +18,7 @@ export const useUsersStore = defineStore('users',  {
         },
         1:{
             name:'Larry Doe',
-            email: 'Larry@example.com',
+            email: 'larry@example.com',
             phone: 25411345678,
             deliveryAddress: '113 Karen',
             password: 'qwerty113',
